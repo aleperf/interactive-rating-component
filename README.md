@@ -52,7 +52,7 @@ Users should be able to:
 
 - Error State (Attempt to submit without selecting a rating)
 <p align="center">
-<img src="./screenshots/errorState.png" width="250" title="advice app mobile screenshot">
+<img src="./screenshots/errorstate.png" width="250" title="advice app mobile screenshot">
 </p>
 
 ### Links
