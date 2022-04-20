@@ -58,7 +58,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [interactive rating component code on github](https://github.com/aleperf/interactive-rating-component)
-- Live Site URL: [Interactive Rating Component Github Page](https://aleperf.github.iot/interactive-rating-component)
+- Live Site URL: [Interactive Rating Component Github Page](https://aleperf.github.io/interactive-rating-component)
 
 ### Built with
 
@@ -66,8 +66,6 @@ Users should be able to:
 - [React](https://reactjs.org/) - JS library
   styles
 - Mobile-first workflow
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
 
 ## Author
 
