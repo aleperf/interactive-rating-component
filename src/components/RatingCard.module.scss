@@ -1,0 +1,153 @@
+@use '../style/index.scss'as *;
+
+.rating-card {
+    width: 85%;
+    height: min-content;
+    padding: 2rem;
+
+
+    background-color: $card-bg-color;
+    border-radius: 10px;
+    font-family: $text-font;
+
+    @media screen and (min-width:18.75em) {
+        width: 90%;
+        max-width: 35rem;
+        height: 37.5rem;
+    }
+
+    @media screen and (min-width:23.4em) {
+        width: 35rem;
+        max-width: 35rem;
+        height: 35rem;
+    }
+
+    @media screen and (min-width:50em) {
+        width: 37rem;
+        max-width: 37rem;
+        height: 35.5rem;
+    }
+
+    &-survey {
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        &__decoration {
+            width: 4rem;
+            height: 4rem;
+            border-radius: 50%;
+            background-image: url('../images/icon-star.svg');
+            background-repeat: no-repeat;
+            background-color: $light-white-filter;
+            background-position: center;
+            margin-bottom: 20px;
+        }
+
+        &__title {
+            color: $title-color;
+            margin-bottom: 1.5rem;
+        }
+
+        &__msg {
+            text-align: start;
+            color: $light-grey-color;
+            font-size: 1.5rem;
+            line-height: 1.5;
+
+            @media screen and (max-width:300px) {
+                font-size: 1.3rem;
+
+
+            }
+        }
+
+        &__btns-container {
+            display: flex;
+            width: 100%;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 20px;
+            margin-bottom: 30px
+        }
+
+        &__submit-btn {
+            border: none;
+            align-self: stretch;
+            background-color: $accent-color;
+            color: $title-color;
+            padding: 1rem;
+            border-radius: 25px;
+            font-size: 1.3rem;
+            letter-spacing: 3px;
+            font-weight: 700;
+
+            &:hover {
+                background-color: $button-hover-color;
+                color: $accent-color;
+                cursor: pointer;
+            }
+
+        }
+
+        &__warning--visible {
+            color: $accent-color;
+            text-align: center;
+            width: 100%;
+            margin-top: 10px;
+            opacity: 1;
+            transition: opacity 0.5s ease;
+            font-size: 1.3rem;
+        }
+
+        &__warning--hidden {
+            color: $accent-color;
+            text-align: center;
+            margin-top: 10px;
+            width: 100%;
+            opacity: 0;
+            transition: opacity 0.5s ease;
+            font-size: 1.3rem;
+        }
+    }
+
+}
+
+.thank-you {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__image {
+        width: 162px;
+        height: 108px;
+        background-image: url('../images/illustration-thank-you.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-bottom: 2rem;
+        margin-top: 1rem;
+
+    }
+
+    &__rating {
+        background-color: $light-white-filter;
+        color: $accent-color;
+        border-radius: 50px;
+        font-size: 1.5rem;
+        padding: 10px 15px;
+
+    }
+
+    h1 {
+        color: $title-color;
+        font-size: 2.2rem;
+        font-weight: 700;
+        margin: 1.5rem;
+    }
+
+    p {
+        color: $light-grey-color;
+        font-size: 1.5rem;
+    }
+}

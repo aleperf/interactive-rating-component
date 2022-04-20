@@ -1,0 +1,30 @@
+@use './style/index.scss'as *;
+
+.App {
+  text-align: center;
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: $medium-grey-color;
+  margin-top: 20px;
+  padding-bottom: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+
+  a {
+    color: $link-color;
+
+    &:visited {
+      color: $visited-link-color;
+    }
+  }
+}

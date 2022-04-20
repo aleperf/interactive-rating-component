@@ -1,0 +1,51 @@
+@use '../style/index.scss'as *;
+
+.btn-round {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: none;
+    color: $medium-grey-color;
+    background-color: $light-white-filter;
+    font-family: $text-font;
+    transition: background-color 0.5s ease;
+
+    @media screen and (min-width:12.5em) {
+        width: 30px;
+        height: 30px;
+
+    }
+
+    @media screen and (min-width:17.5em) {
+        width: 35px;
+        height: 35px;
+    }
+
+    @media screen and (min-width:18.75em) {
+        width: 45px;
+        height: 45px;
+
+
+
+    }
+
+    @media screen and (min-width:50em) {
+        width: 50px;
+        height: 50px;
+
+    }
+
+
+
+    &:hover {
+        background-color: $accent-color;
+        color: $title-color;
+        cursor: pointer;
+    }
+
+    &--active {
+        background-color: $light-grey-color;
+        color: $title-color;
+    }
+
+}
