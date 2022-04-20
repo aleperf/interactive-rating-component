@@ -57,8 +57,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [interactive rating component code on github](https://github.com/aleperf/interactive-rating-component)
+- Live Site URL: [Interactive Rating Component Github Page](https://aleperf.github.iot/interactive-rating-component)
 
 ### Built with
 
