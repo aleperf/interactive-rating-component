@@ -72,7 +72,7 @@ const RatingCard = () => {
       )}
       <CSSTransition
         in={isSubmitted}
-        timeout={1000}
+        timeout={500}
         classNames={{
           enter: classes['fadein-enter'],
           enterActive: classes['fadein-enter-active'],
