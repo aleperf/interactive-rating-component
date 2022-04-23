@@ -4,7 +4,7 @@ function App() {
   return (
     <div className="App">
       <RatingCard />
-      <div class="attribution">
+      <div className="attribution">
         Challenge by &nbsp;
         <a
           href="https://www.frontendmentor.io?ref=challenge"

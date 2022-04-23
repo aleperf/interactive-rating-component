@@ -1,5 +1,5 @@
 import classes from './RatingCard.module.scss';
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import RoundButton from './RoundButton';
 import { CSSTransition } from 'react-transition-group';
 
@@ -7,6 +7,9 @@ const RatingCard = () => {
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [selectedRating, setSelectedRating] = useState('0');
   const [error, setError] = useState(false);
+  //using useRef avoids the "findDOMNode is deprecated" warning when using
+  //the CSSTransition component, see the CSSCTransition component below
+  const nodeRef = useRef(null);
 
   const VOTING_RANGE = ['1', '2', '3', '4', '5'];
 
@@ -78,6 +81,9 @@ const RatingCard = () => {
           enterActive: classes['fadein-enter-active'],
         }}
         unmountOnExit
+        //adding a useRef hook avoids the use of the findDOMNode method
+        //which is deprecated and causes a warning during the transition.
+        nodeRef={nodeRef}
       >
         <div className={classes['thank-you']}>
           <div className={classes['thank-you__image']}> </div>
