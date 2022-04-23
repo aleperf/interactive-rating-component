@@ -149,3 +149,15 @@
         font-size: 1.5rem;
     }
 }
+
+.fadein-enter {
+    opacity: 0;
+    transform: scale(0.9);
+
+}
+
+.fadein-enter-active {
+    opacity: 1;
+    transform: scale(1);
+    transition: all 500ms ease-in-out;
+}

@@ -1,6 +1,7 @@
 import classes from './RatingCard.module.scss';
 import { useState } from 'react';
 import RoundButton from './RoundButton';
+import { CSSTransition } from 'react-transition-group';
 
 const RatingCard = () => {
   const [isSubmitted, setIsSubmitted] = useState(false);
@@ -69,8 +70,15 @@ const RatingCard = () => {
           </p>
         </form>
       )}
-
-      {isSubmitted && (
+      <CSSTransition
+        in={isSubmitted}
+        timeout={1000}
+        classNames={{
+          enter: classes['fadein-enter'],
+          enterActive: classes['fadein-enter-active'],
+        }}
+        unmountOnExit
+      >
         <div className={classes['thank-you']}>
           <div className={classes['thank-you__image']}> </div>
           <div className={classes['thank-you__rating']}>
@@ -82,7 +90,7 @@ const RatingCard = () => {
             more support, don’t hesitate to get in touch!
           </p>
         </div>
-      )}
+      </CSSTransition>
     </div>
   );
 };
