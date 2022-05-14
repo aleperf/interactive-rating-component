@@ -13,7 +13,8 @@ function App() {
         >
           Frontend Mentor.
         </a>
-        &nbsp; Coded by <a href="https://github.com/aleperf">@aleperf.</a>
+        &nbsp; Coded by &nbsp;
+        <a href="https://github.com/aleperf"> @aleperf.</a>
       </div>
     </div>
   );

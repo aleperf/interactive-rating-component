@@ -85,7 +85,7 @@ const RatingCard = () => {
         //which is deprecated and causes a warning during the transition.
         nodeRef={nodeRef}
       >
-        <div className={classes['thank-you']}>
+        <div className={classes['thank-you']} ref={nodeRef}>
           <div className={classes['thank-you__image']}> </div>
           <div className={classes['thank-you__rating']}>
             You selected {selectedRating} out of 5
